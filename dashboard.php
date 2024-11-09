@@ -109,7 +109,7 @@ foreach ($countMonthly as $entry) {
                 data: {
                     labels: <?php echo json_encode($months); ?>,
                     datasets: [{
-                        label: 'Books Created',
+                        label: 'Buku Terdaftar',
                         data: <?php echo json_encode($totalBooksMonthly); ?>,
                         backgroundColor: gradient,
                         borderColor: 'rgba(54, 162, 235, 1)',

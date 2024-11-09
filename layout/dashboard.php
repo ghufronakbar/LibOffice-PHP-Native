@@ -5,8 +5,7 @@ require_once './utils/isSession.php';
 if (!isSession()) {
   echo "<script>alert('Login terlebih dahulu!');</script>";
   echo "<script>console.log('Login terlebih dahulu!');</script>";
-  header('Location: login.php');
-  exit();
+  echo "<script>location.href = './login.php';</script>";  
 }
 ?>
 
