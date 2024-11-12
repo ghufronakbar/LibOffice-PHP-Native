@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </td>
                         <td class="px-6 py-4"><?php echo $book['title']; ?></td>
                         <td class="px-6 py-4"><?php echo $book['sectionName']; ?></td>
-                        <td class="px-6 py-4"><?php echo $book['synopsis']; ?></td>
+                        <td class="px-6 py-4 line-clamp-3"><?php echo $book['synopsis']; ?></td>
                         <td class="px-6 py-4"><?php echo $book['author'] ?: 'Belum ditambahkan'; ?></td>
                         <td class="px-6 py-4"><?php echo formatDate($book['publishedAt']); ?></td>
                         <td class="px-6 py-4"><?php echo formatDate($book['createdAt']); ?></td>
